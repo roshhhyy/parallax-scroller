@@ -1,46 +1,55 @@
-# Jetpack Geometry Assault
+# Parallax Scroller
 
-A 2D parallax scrolling shooter with a stick-figure protagonist in modular armor and a jetpack, battling waves of geometric enemies across diverse, dynamic environments.
+A 2D side-scrolling arcade game with parallax backgrounds, multiple weapons, and enemies.
 
-## Game Features
+## Features
 
-- **Character**: Stick figure with a jetpack and modular weapons system
-- **Enemies**: Various geometric shapes with different behaviors
-- **Environments**: Four distinct biomes with day/night cycles:
-  - Cityscape: Urban landscape with skyscrapers
-  - Farmland: Rural setting with rolling hills and farms
-  - Ocean: Watery environment with islands and boats
-  - Jungle: Dense foliage and mysterious atmosphere
-- **Weapons**: Three different gun types:
-  - Pistol: Fast fire rate, medium damage
-  - Shotgun: Spread shot, good for groups
-  - Laser: Continuous beam, high damage but overheats
-- **Gameplay**: Fight waves of enemies, collect power-ups, and survive as long as possible
+- Smooth parallax scrolling backgrounds that change based on biome
+- Day/night cycle with visual effects
+- Multiple weapon systems (Pistol, Shotgun, Laser)
+- Ammo and charge management
+- Jetpack flight mechanics with directional flame effects
+- Enemy variety (triangle, square, circle, pentagon) with different behaviors
+- Power-up system (health, fuel, ammo, charge)
+- Damage number visualization for instant feedback
+- Muzzle flash effects
+- Weapon pickups and upgrades
 
 ## Controls
 
-- **Move**: WASD or Arrow Keys
-- **Fire**: Spacebar
-- **Switch Weapons**: Number Keys 1-3 (1: Pistol, 2: Shotgun, 3: Laser)
+- **WASD** - Move character (W activates main jetpack thrust, A/D for horizontal movement)
+- **Spacebar** - Fire weapon
+- **1/2/3** - Switch between weapons (Pistol, Shotgun, Laser)
 
-## Installation
+## Weapons
+
+- **Pistol**: Infinite ammo, moderate damage, rapid fire
+- **Shotgun**: Limited ammo, multiple pellets in a spread pattern, high damage
+- **Laser**: Limited charge, continuous beam, high damage over time
+
+## Power-ups
+
+- Health (restores player health)
+- Fuel (refills jetpack fuel)
+- Shotgun ammo (replenishes shotgun shells)
+- Laser charge (recharges laser weapon)
+- Jetpack upgrade (improves jetpack performance)
+
+## Technical Details
+
+Built with:
+- Three.js for rendering
+- Pure JavaScript for game logic
+- HTML/CSS for UI elements
+
+## Running the Game
 
 1. Clone the repository
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Run the game:
-   ```
-   npm run dev
-   ```
+2. Open `index.html` in a browser or set up a local server
 
-## Technologies
+```bash
+# Using Python to create a simple HTTP server
+python -m http.server 8000
+```
 
-- Three.js for rendering
-- Vanilla JavaScript for game logic
-- Vite for bundling and development server
-
-## Credits
-
-Created as a demo 2D parallax scrolling game. 
+3. Navigate to `http://localhost:8000` in your browser 
